@@ -18,17 +18,13 @@ O projeto Ecoleta foi desenvolvido durante a Next Level Week 01 (NLW#1) da Rocke
 
 O e-Coleta funciona como um marketpalce onde estabelecimentos, apelidados de pontos de coleta, podem se oferecer como ponto de depósito para determinados itens como Óleo, Pilhas, Lixo, etc. Para isso os estabelecimentos se cadastram em um portal web dizendo quais itens pode coletar, e o público através de um aplicativo mobile busca no mapa os pontos de coleta próximos de acordo com os itens que deseja descartar. Depois disso o usuário pode entrar em contato através de e-mail ou Whatsapp.
 
-
-
 Funcionalidades Extras:
 
-* Web:
-  
-  * Tela de conclusão com animação
-  
-  * 
-  
-  * Tratamento de campos e erros durante o cadastro
+- Web:
+  - Tela de conclusão com animação
+  - Integração com API do IBGE
+  - Validação de campos
+  - Tratamento de erros durante o cadastro
 
 <br>
 
@@ -50,49 +46,38 @@ Funcionalidades Extras:
 
 Este projeto foi desenvolvido em Typescript com as seguintes tecnologias:
 
-
-
 Backend:
 
 - [Node](https://nodejs.org/en/)
 - [Insomnia](https://insomnia.rest/download/)
-- [Express]()
+- [Express](https://www.npmjs.com/package/express)
 - [Knex](http://knexjs.org/)
-- [SQLite3]()
-- [multer]()
+- [SQLite3](https://www.npmjs.com/package/sqlite3)
+- [multer](https://www.npmjs.com/package/multer)
 - [celebrate](https://github.com/arb/celebrate)
-- []()
-- []()
 
 Frontend:
 
-* [React JS](https://reactjs.org/)
-
-* [react-icons](https://react-icons.github.io/react-icons/)
-
-* [react-navigation](https://reactnavigation.org/docs/getting-started)
-
-
-
-* [react-leaflet](https://react-leaflet.js.org)
-
-* [axios]()
-  
-
-
-* [API IBGE](https://servicodados.ibge.gov.br/api/v1)
-
-* [react-dropzone](https://servicodados.ibge.gov.br/api/v1)
-
-* [react-lottie](https://github.com/chenqingspring/react-lottie)
-
-
+- [React JS](https://reactjs.org/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-navigation](https://reactnavigation.org/docs/getting-started)
+- [react-leaflet](https://react-leaflet.js.org)
+- [axios](https://www.npmjs.com/package/axios)
+- [API IBGE](https://servicodados.ibge.gov.br/api/v1)
+- [react-dropzone](https://servicodados.ibge.gov.br/api/v1)
+- [react-lottie](https://github.com/chenqingspring/react-lottie)
 
 Mobile:
 
-* [React Native](https://facebook.github.io/react-native/)
-
-* [Expo](https://expo.io/)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+- [expo-google-fonts](https://dev.to/expo/expo-google-fonts-is-released-4g58)
+- [react-navigation](https://reactnavigation.org/docs/getting-started)
+- [react-native-maps](https://www.npmjs.com/package/react-native-maps)
+- [react-native-svg](https://www.npmjs.com/package/react-native-svg)
+- [axios](https://www.npmjs.com/package/axios)
+- [expo-location](https://www.npmjs.com/package/expo-location)
+- [expo-mail-composer](https://www.npmjs.com/package/expo-mail-composer)
 
 <br>
 
@@ -102,12 +87,12 @@ Mobile:
 
 - Node
 
-- Yarn
+- NPM
 
 - Expo-cli
-  
+
   ```
-  yarn global add install expo-cli
+  npm global add install expo-cli
   ```
 
 <br>
@@ -115,36 +100,36 @@ Mobile:
 ## Installation Steps
 
 - Clone this repository
-  
+
   ```
-  git clone https://github.com/renanxr3/semanaomnistack11
+  git clone https://github.com/renanxr3/nlw01
   ```
 
 - Install Backend dependencies
-  
+
   ```
-  cd omnistack11-backend
-  yarn install
+  cd backend
+  npm install
   ```
 
 - Create database
-  
+
   ```
-  yarn knex migrate:latest
+  npm knex migrate:latest
   ```
 
-- Install frontend dependencies
-  
+- Install web dependencies
+
   ```
-  cd omnistack11-frontend
-  yarn install
+  cd web
+  npm install
   ```
 
 - Install mobile dependencies
-  
+
   ```
-  cd omnistack11-mobile
-  yarn install
+  cd mobile
+  npm install
   ```
 
 <br>
@@ -155,21 +140,21 @@ Mobile:
 
 ```
 cd omnistack11-backend
-yarn dev
+npm run dev
 ```
 
-## Frontend
+## Web
 
 ```
-cd omnistack11-frontend
-yarn start
+cd web
+npm start
 ```
 
 ## Mobile
 
 ```
 cd omnistack11-mobile
-yarn start
+npm start
 ```
 
 <br/>
@@ -189,4 +174,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 # Acknowledgments
 
 - [Rocketseat](https://rocketseat.com.br/)
-- [Semana Omnistack 11 ](https://rocketseat.com.br/week-11/aulas)
+- [Next Level Week #1](https://nextlevelweek.com/)
