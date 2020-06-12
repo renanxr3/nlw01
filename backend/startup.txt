@@ -1,5 +1,11 @@
+# nao confirmado
+yarn init -y
+yarn add typescript -D
+yarn add express
+yarn add @types/express -D
+yarn add ts-node-dev -D
 
-
+# Passos DIA 2
 npm install knex
 npm install sqlite3
 npx knex --knexfile knexfile.ts migrate:latest
@@ -7,3 +13,13 @@ npx knex --knexfile knexfile.ts seed:run
 
 npm install cors
 npm install @types/cors -D
+
+# UPLOAD DE IMAGENS
+npm install multer
+npm install @types/multer -D
+
+# validacao de campos
+# https://github.com/arb/celebrate
+# https://github.com/hapijs/joi
+npm install celebrate
+npm install @types/hapi__joi -D

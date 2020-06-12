@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import knex from "knex";
+import knex from "../database/connection";
 
 class ItemsController {
   async index(request: Request, response: Response) {
@@ -8,8 +8,8 @@ class ItemsController {
     const serializedItems = items.map((item) => {
       return {
         id: item.id,
-        name: item.title,
-        image_url: `http://localhost:3333/uploads/${item.image}`,
+        title: item.title,
+        image_url: `http://192.168.0.11:3333/uploads/${item.image}`,
       };
     });
 

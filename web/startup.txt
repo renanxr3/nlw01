@@ -1,0 +1,38 @@
+# Nao confirmado
+npx create-react-app web --template typescript
+
+# Passos DIA 3
+npm install react-icons
+npm install react-router-dom
+npm install @types/react-router-dom -D
+
+# Mapa com LEAFLET
+# https://leafletjs.com/examples/quick-start/
+# https://react-leaflet.js.org
+npm install leaflet react-leaflet
+npm install @types/react-leaflet -D
+
+# Lib para consulta de API
+npm install axios
+
+# API IBGE
+# https://servicodados.ibge.gov.br/api/v1/localidades/estados
+# https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios
+
+# 
+https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
+
+# Dropzone / Upload de imagens
+# https://github.com/react-dropzone/react-dropzone
+npm install react-dropzone
+
+# Validacao de campos
+# https://github.com/jquense/yup
+
+
+https://react-icons.github.io/react-icons/icons?name=fi
+
+# animacao
+# https://github.com/chenqingspring/react-lottie
+npm install react-lottie  
+npm i @types/react-lottie
