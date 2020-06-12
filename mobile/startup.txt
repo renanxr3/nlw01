@@ -1,0 +1,28 @@
+npm install -g expo-cli
+expo init mobile
+
+# expo google fonts
+# https://dev.to/expo/expo-google-fonts-is-released-4g58
+expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
+
+# botao
+https://reactnavigation.org/docs/getting-started
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+npm install @react-navigation/stack
+
+expo install react-native-maps
+expo install expo-constants
+expo install react-native-svg
+
+npm install axios
+
+# geolocalização
+expo install expo-location
+
+# enviar email
+expo install expo-mail-composer
+
+# enviar whatsapp
+# Linking do react-native
